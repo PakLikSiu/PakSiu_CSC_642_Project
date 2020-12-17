@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.finalproject_tersting.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_fragment_FindCase"
+            app:destination="@id/fragment_FindCase" />
+        <action
+            android:id="@+id/action_FirstFragment_to_fragment_Login"
+            app:destination="@id/fragment_Login" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.finalproject_tersting.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_fragment_SecondSec"
+            app:destination="@id/fragment_SecondSec" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_FindCase"
+        android:name="com.example.finalproject_tersting.Fragment_FindCase"
+        android:label="fragment__find_case"
+        tools:layout="@layout/fragment__find_case" >
+        <action
+            android:id="@+id/action_fragment_FindCase_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_FirstFragment2"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_fragment_case1"
+            app:destination="@id/fragment_case1" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_fragment_case2"
+            app:destination="@id/fragment_case2" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_fragment_case3"
+            app:destination="@id/fragment_case3" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_fragment_case5"
+            app:destination="@id/fragment_case5" />
+        <action
+            android:id="@+id/action_fragment_FindCase_to_fragment_case4"
+            app:destination="@id/fragment_case4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_SecondSec"
+        android:name="com.example.finalproject_tersting.Fragment_SecondSec"
+        android:label="fragment__second_sec"
+        tools:layout="@layout/fragment__second_sec" >
+        <action
+            android:id="@+id/action_fragment_SecondSec_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragment_SecondSec_to_fragment_Preview"
+            app:destination="@id/fragment_Preview" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Login"
+        android:name="com.example.finalproject_tersting.Fragment_Login"
+        android:label="fragment__login"
+        tools:layout="@layout/fragment__login" >
+        <action
+            android:id="@+id/action_fragment_Login_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragment_Login_to_fragment_Admin"
+            app:destination="@id/fragment_Admin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Admin"
+        android:name="com.example.finalproject_tersting.Fragment_Admin"
+        android:label="fragment__admin"
+        tools:layout="@layout/fragment__admin" >
+        <action
+            android:id="@+id/action_fragment_Admin_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragment_Admin_to_fragment_case1"
+            app:destination="@id/fragment_case1" />
+        <action
+            android:id="@+id/action_fragment_Admin_to_fragment_case2"
+            app:destination="@id/fragment_case2" />
+        <action
+            android:id="@+id/action_fragment_Admin_to_fragment_case3"
+            app:destination="@id/fragment_case3" />
+        <action
+            android:id="@+id/action_fragment_Admin_to_fragment_case5"
+            app:destination="@id/fragment_case5" />
+        <action
+            android:id="@+id/action_fragment_Admin_to_fragment_case4"
+            app:destination="@id/fragment_case4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_case1"
+        android:name="com.example.finalproject_tersting.cases.Fragment_case1"
+        android:label="fragment_case1"
+        tools:layout="@layout/fragment_case1" />
+    <fragment
+        android:id="@+id/fragment_Preview"
+        android:name="com.example.finalproject_tersting.Fragment_Preview"
+        android:label="fragment__preview"
+        tools:layout="@layout/fragment__preview" >
+        <action
+            android:id="@+id/action_fragment_Preview_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_case2"
+        android:name="com.example.finalproject_tersting.cases.Fragment_case2"
+        android:label="fragment_case2"
+        tools:layout="@layout/fragment_case2" />
+    <fragment
+        android:id="@+id/fragment_case3"
+        android:name="com.example.finalproject_tersting.cases.Fragment_case3"
+        android:label="fragment_case3"
+        tools:layout="@layout/fragment_case3" />
+    <fragment
+        android:id="@+id/fragment_case5"
+        android:name="com.example.finalproject_tersting.cases.Fragment_case5"
+        android:label="fragment_case5"
+        tools:layout="@layout/fragment_case5" />
+    <fragment
+        android:id="@+id/fragment_case4"
+        android:name="com.example.finalproject_tersting.cases.Fragment_case4"
+        android:label="fragment_case4"
+        tools:layout="@layout/fragment_case4" />
+</navigation>
